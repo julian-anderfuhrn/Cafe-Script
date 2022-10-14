@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www", "build-sass": "node-sass --include-path scss public/stylesheets/index.scss public/stylesheets/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +13,9 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   }
 }
