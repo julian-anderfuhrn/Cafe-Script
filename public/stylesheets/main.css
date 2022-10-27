@@ -2,7 +2,7 @@
 .navbar {
   background-color: #8B4513; }
 
-body {
+.body__login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,3 +145,13 @@ input[type="submit"]:hover {
 .nav-bar {
   display: flex;
   flex-direction: row; }
+
+.carousel-button {
+  background-color: #8B4513; }
+
+.multi-carousel {
+  margin-top: 50px; }
+
+.banner-bottom {
+  width: 100%;
+  margin-top: 4rem; }
