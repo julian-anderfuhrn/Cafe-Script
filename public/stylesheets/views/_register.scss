@@ -6,33 +6,33 @@
     background-color: rgb(0, 0, 0);
 }
 
-.container_login { 
+.container_register { 
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 795px;
     background-color: #2e2a24;
 border-radius: 8px;
 overflow: hidden;
 }
 
-.container_login::before{
+.container_register::before{
     content: " ";
     position: absolute;
     top:-50%;
     left: -50%;
-    width: 380px;
-    height: 420px;
+    width: 400px;
+    height: 795px;
     background:linear-gradient(0deg,transparent,$marron, $marron) ;
     transform-origin: bottom right;
  animation: animate 6s linear infinite;
 }
-.container_login::after{
+.container_register::after{
     content: " ";
     position: absolute;
     top:-50%;
     left: -50%;
-    width: 380px;
-    height: 420px;
+    width: 400px;
+    height: 795px;
     background:linear-gradient(0deg,transparent,$marron, $marron) ;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -149,11 +149,13 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: #dea20c;
 }
-@media only screen and (min-width: 200px) and (max-width:420px) {
-    .container_login { 
+
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    .container_register { 
         position: relative;
         width: 275px;
-        height: 445px;
+        height: 750px;
         background-color: #2e2a24;
     border-radius: 8px;
     overflow: hidden;

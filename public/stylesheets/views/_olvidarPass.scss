@@ -6,16 +6,16 @@
     background-color: rgb(0, 0, 0);
 }
 
-.container_login { 
+.container_recuperar { 
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 795px;
     background-color: #2e2a24;
 border-radius: 8px;
 overflow: hidden;
 }
 
-.container_login::before{
+.container_recuperar::before{
     content: " ";
     position: absolute;
     top:-50%;
@@ -26,7 +26,7 @@ overflow: hidden;
     transform-origin: bottom right;
  animation: animate 6s linear infinite;
 }
-.container_login::after{
+.container_recuperar::after{
     content: " ";
     position: absolute;
     top:-50%;
@@ -149,8 +149,10 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: #dea20c;
 }
-@media only screen and (min-width: 200px) and (max-width:420px) {
-    .container_login { 
+
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    .container_recuperar { 
         position: relative;
         width: 275px;
         height: 445px;

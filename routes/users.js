@@ -5,6 +5,12 @@ var router = express.Router();
 router.get('/login', function (req, res, next) {
   res.render('login');
 });
+router.get("/register", (req, res, next) => {
+  res.render("register");
+});
+router.get("/olvidar", (req, res, next) => {
+  res.render("olvidarPass");
+});
 
 
 module.exports = router;
