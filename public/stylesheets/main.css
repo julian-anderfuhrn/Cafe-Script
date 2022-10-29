@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
 .navbar {
-  background-color: #8B4513; }
+  background-color: #4f290e;
+  color: #f3e8e8;
+  text-transform: uppercase;
+  font-size: 0.9rem; }
+
+.cafe-icon {
+  width: 2rem; }
+
+@media (max-width: 600px) {
+  .banner-top {
+    height: 200px; } }
 
 .body__login {
   display: flex;
@@ -24,7 +34,7 @@
   left: -50%;
   width: 380px;
   height: 420px;
-  background: linear-gradient(0deg, transparent, #8B4513, #8B4513);
+  background: linear-gradient(0deg, transparent, #4f290e, #4f290e);
   transform-origin: bottom right;
   animation: animate 6s linear infinite; }
 
@@ -35,7 +45,7 @@
   left: -50%;
   width: 380px;
   height: 420px;
-  background: linear-gradient(0deg, transparent, #8B4513, #8B4513);
+  background: linear-gradient(0deg, transparent, #4f290e, #4f290e);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s; }
@@ -190,7 +200,7 @@ input[type="submit"]:hover {
   left: -50%;
   width: 400px;
   height: 795px;
-  background: linear-gradient(0deg, transparent, #8B4513, #8B4513);
+  background: linear-gradient(0deg, transparent, #4f290e, #4f290e);
   transform-origin: bottom right;
   animation: animate 6s linear infinite; }
 
@@ -201,7 +211,7 @@ input[type="submit"]:hover {
   left: -50%;
   width: 400px;
   height: 795px;
-  background: linear-gradient(0deg, transparent, #8B4513, #8B4513);
+  background: linear-gradient(0deg, transparent, #4f290e, #4f290e);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s; }
@@ -356,7 +366,7 @@ input[type="submit"]:hover {
   left: -50%;
   width: 380px;
   height: 420px;
-  background: linear-gradient(0deg, transparent, #8B4513, #8B4513);
+  background: linear-gradient(0deg, transparent, #4f290e, #4f290e);
   transform-origin: bottom right;
   animation: animate 6s linear infinite; }
 
@@ -367,7 +377,7 @@ input[type="submit"]:hover {
   left: -50%;
   width: 380px;
   height: 420px;
-  background: linear-gradient(0deg, transparent, #8B4513, #8B4513);
+  background: linear-gradient(0deg, transparent, #4f290e, #4f290e);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s; }
@@ -500,15 +510,19 @@ input[type="submit"]:hover {
     pointer-events: none;
     z-index: 9; } }
 
-.container_footer {
-  background-color: #8B4513; }
+footer {
+  background-color: #4f290e;
+  color: #f3e8e8; }
 
 .nav-bar {
   display: flex;
   flex-direction: row; }
 
+* {
+  font-family: 'Raleway', sans-serif; }
+
 .carousel-button {
-  background-color: #8B4513; }
+  background-color: #4f290e; }
 
 .multi-carousel {
   margin-top: 50px; }
@@ -517,6 +531,10 @@ input[type="submit"]:hover {
   width: 100%;
   margin-top: 4rem; }
 
-.product:hover {
-  transform: scale(1.1);
+.capsula-container:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms; }
+
+.product-container:hover {
+  background-color: #bababa;
   transition-duration: 500ms; }
