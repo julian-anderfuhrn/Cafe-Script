@@ -1,21 +1,17 @@
-
 //DOM
-const contenedor_login = document.querySelector("#contenido");
-contenedor_login.classList.add("animate__animated", "animate__backInLeft");
-const inputUser = document.querySelector("#nombre");
-const inputPass = document.querySelector("#password");
-const formulario = document.querySelector("#form1");
+const contenedor_olvidar = document.querySelector("#contenido");
+contenedor_olvidar.classList.add("animate__animated", "animate__backInLeft");
+const inputEmail = document.querySelector("#email1");
+const formulario = document.querySelector("#form3");
 const validador = document.querySelector("#validador");
 console.log("Conected");
 //Objeto
 const objUser = {
-    nombre: "",
-    password: ""
+    email1: ""
 };
 //Eventos
 const eventListeners = () => {
-    inputUser.addEventListener("change", validar);
-    inputPass.addEventListener("change", validar);
+    inputEmail.addEventListener("change", validar);
     formulario.addEventListener("submit", validacionFormulario);
 }
 //Clase
@@ -48,20 +44,20 @@ const validar = (e) => {
 const validacionFormulario = (e) => {
     e.preventDefault();
     console.log(objUser);
-    const { nombre, password } = objUser;
-    if (!validarEmail(nombre)) {
+    const { email1 } = objUser;
+    if (!validarEmail(email1)) {
         ui.validarInput("Mail incorrecto", "error");
-        console.log(`Usuario : ${nombre} y Password:${password}`);
+        console.log(`Email : ${email1} `);
         return;
     }
-    else if (nombre === "" || password === "") {
-        ui.validarInput("Todos los mensajes son obligatorios", "error");
-        console.log(`Usuario : ${nombre} y Password:${password}`);
+    else if (email1 === "") {
+        ui.validarInput("Mail obligatorio", "error");
+        console.log(`Email : ${email1}`);
         return;
 
     }
     else {
-        console.log(`Usuario : ${nombre} y Password:${password}`);
+        console.log(`Email : ${email1} correcto`);
         ui.validarInput("Datos correctos");
     }
 }
