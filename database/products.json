@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "nombre": "capsula nostro",
+        "descripcion": "café de notas dulces y frutos secos",
+        "precio": "100",
+        "descuento": 0,
+        "imagen": "capsula-nostro.png"
+    },
+    {
+        "id": "2",
+        "nombre": "capsula decaf",
+        "descripcion": "café de notas dulces y frutos secos",
+        "precio": "100",
+        "descuento": 0,
+        "imagen": "capsula-decaf.png"
+    },
+    {
+        "id": "3",
+        "nombre": "capsula forte",
+        "descripcion": "café de notas dulces y frutos secos",
+        "precio": "100",
+        "descuento": 0,
+        "imagen": "capsula-forte.png"
+    },
+    {
+        "id": "4",
+        "nombre": "capsula lungo",
+        "descripcion": "café de notas dulces y frutos secos",
+        "precio": "100",
+        "descuento": 0,
+        "imagen": "capsula-lungo.png"
+    },
+    {
+        "id": "5",
+        "nombre": "capsula tradizionale",
+        "descripcion": "café de notas dulces y frutos secos",
+        "precio": "100",
+        "descuento": 0,
+        "imagen": "capsula-tradizionale.png"
+    },
+    {
+        "id": "6",
+        "nombre": "capsula nero",
+        "descripcion": "café de notas dulces y frutos secos",
+        "precio": "100",
+        "descuento": 0,
+        "imagen": "capsula-nero.png"
+    }
+]
