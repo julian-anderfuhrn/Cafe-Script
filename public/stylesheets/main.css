@@ -1,9 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
 .navbar {
   background-color: #4f290e;
   color: #f3e8e8;
   text-transform: uppercase;
   font-size: 0.9rem; }
+  .navbar .navbar__nav a {
+    letter-spacing: 2.5px;
+    font-family: "Barlow", sans-serif; }
+  .navbar .navbar__nav .logoscript {
+    font-family: "Rye", cursive; }
+  .navbar .navbar__nav .navbar__nav-s ul li .menu_options {
+    color: #f3e8e8; }
+    .navbar .navbar__nav .navbar__nav-s ul li .menu_options:hover {
+      text-decoration: underline;
+      color: #F0E68C; }
+  .navbar .navbar__nav .navbar__nav-s .cuenta a {
+    color: #f3e8e8;
+    font-family: "Rye", cursive; }
 
 .cafe-icon {
   width: 2rem; }
