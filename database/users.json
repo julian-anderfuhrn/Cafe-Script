@@ -1,0 +1,38 @@
+[
+ {
+  "id": 1,
+  "name": "asdsad",
+  "apellido": "asdsa",
+  "email": "asd@asd.com",
+  "telefono": "123",
+  "password": "$2a$10$lQYCHGVOiCZ8iQ/LOzLDquWQ9JQJ5WjBGoLVbILg9Ce34w/RR7JlK",
+  "confirmPass": "$2a$10$kM4wvz605wAmkp4D/VurjuUPf6eRBvYc1kr51sJ0rAnZlcmkwfQ6C"
+ },
+ {
+  "id": 1,
+  "name": "asdsad",
+  "apellido": "asdsa",
+  "email": "asd@as123d.com",
+  "telefono": "123",
+  "password": "$2a$10$lQYCHGVOiCZ8iQ/LOzLDquWQ9JQJ5WjBGoLVbILg9Ce34w/RR7JlK",
+  "confirmPass": "$2a$10$kM4wvz605wAmkp4D/VurjuUPf6eRBvYc1kr51sJ0rAnZlcmkwfQ6C"
+ },
+ {
+  "id": 2,
+  "name": "123",
+  "apellido": "123",
+  "email": "asd@a123231sd.com",
+  "telefono": "123",
+  "password": "$2a$10$Sn60Zm0rdxAfhIkQasvdNey6HGHO4zD4SxxGlRhoJQyr3RhY0Wzt2",
+  "confirmPass": "$2a$10$KbAokzQ5upfOpldK6YR.fuwhCtMqOuXW3U0uu75iBFeCqfl27ERXS"
+ },
+ {
+  "id": 3,
+  "name": "zarpa",
+  "apellido": "doen",
+  "email": "zarpadoen@sad.com",
+  "telefono": "123",
+  "password": "$2a$10$v8oS5KnSH1e5O44Fd.ldeuyTWmn3u4hNIk3RSnDf/Y/B9pYSknPnG",
+  "confirmPass": "$2a$10$5J4r6DCskt8quXxQ/CGF8u7S.Njyt2DSkJKY/DA2u1G2mORK3pz8G"
+ }
+]
