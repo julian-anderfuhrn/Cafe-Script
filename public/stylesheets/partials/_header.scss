@@ -4,6 +4,37 @@
     color: $words-1;
     text-transform: uppercase;
     font-size: 0.9rem;
+    
+    .navbar__nav {
+        a{
+            letter-spacing: 2.5px;
+            font-family: $font-main;
+        }
+        .logoscript {
+            font-family: $fontsecond;
+        }
+
+
+        .navbar__nav-s{
+            ul{
+                li{
+                    .menu_options{
+                        color: $words-1;
+                        &:hover{
+                            text-decoration: underline;
+                            color: $words-2;
+                        }
+                    }
+                }
+            }
+            .cuenta{
+                a{
+                    color: $words-1;
+                    font-family: $fontsecond;
+                }
+            }
+        }
+    }
 }
 .cafe-icon {
     width: 2rem;

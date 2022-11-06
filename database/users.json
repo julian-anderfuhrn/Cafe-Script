@@ -34,5 +34,14 @@
   "telefono": "123",
   "password": "$2a$10$v8oS5KnSH1e5O44Fd.ldeuyTWmn3u4hNIk3RSnDf/Y/B9pYSknPnG",
   "confirmPass": "$2a$10$5J4r6DCskt8quXxQ/CGF8u7S.Njyt2DSkJKY/DA2u1G2mORK3pz8G"
+ },
+ {
+  "id": 4,
+  "name": "sharawy",
+  "apellido": "akemnrra",
+  "email": "zarpa@doen.com",
+  "telefono": "123123123",
+  "password": "$2a$10$aiu8K1Fz/3uQFf.XOXxlJ.B.5pnVdGjRcK5NdSxy4I9GNhGCEd7Wq",
+  "confirmPass": "$2a$10$xZS.qODrMnBfpNp6qiA8RuUuK.S5enE87pmdg2IF0PBW7WL9QQz2e"
  }
 ]
