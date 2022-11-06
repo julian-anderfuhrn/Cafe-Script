@@ -29,7 +29,7 @@ const controller = {
 
             }
         } else {
-            res.render("../views/register.ejs", { errors: errors.array(), oldData: req.body });
+            res.render("../views/login.ejs", { errors: errors.array(), oldData: req.body });
         }
     },
     register: (req, res, next) => {
