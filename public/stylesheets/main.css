@@ -525,6 +525,9 @@ input[type="submit"]:hover {
     pointer-events: none;
     z-index: 9; } }
 
+.products {
+  background-color: #F5F5DC; }
+
 footer {
   background-color: #4f290e;
   color: #f3e8e8; }
@@ -536,20 +539,44 @@ footer {
 * {
   font-family: 'Raleway', sans-serif; }
 
-.carousel-button {
-  background-color: #4f290e; }
-
-.multi-carousel {
-  margin-top: 50px; }
-
-.banner-bottom {
-  width: 100%;
-  margin-top: 4rem; }
-
-.capsula-container:hover {
-  transform: scale(1.2);
-  transition-duration: 500ms; }
-
-.product-container:hover {
-  background-color: #bababa;
-  transition-duration: 500ms; }
+.mainpag {
+  background-color: #F5F5DC; }
+  .mainpag .carousel-button {
+    background-color: #4f290e; }
+  .mainpag .multi-carousel {
+    margin-top: 50px; }
+    .mainpag .multi-carousel .carousel-inner h2 {
+      font-family: "Barlow", sans-serif;
+      color: #B8860B;
+      margin: 50px 0 50px 0;
+      letter-spacing: 3px;
+      font-size: 40px; }
+    .mainpag .multi-carousel .carousel-inner .product-container {
+      padding-bottom: 30px; }
+      .mainpag .multi-carousel .carousel-inner .product-container p {
+        font-family: "Barlow", sans-serif;
+        font-size: 20px;
+        color: #4f290e; }
+      .mainpag .multi-carousel .carousel-inner .product-container .button__add {
+        background-color: #4f290e; }
+    .mainpag .multi-carousel .carousel-inner .product-container:hover {
+      background-color: #b8870b38;
+      transition-duration: 500ms; }
+  .mainpag .banner-bottom {
+    width: 100%;
+    margin-top: 4rem; }
+  .mainpag .capsula h2 {
+    font-family: "Barlow", sans-serif;
+    color: #B8860B;
+    margin: 70px 0 50px 0;
+    letter-spacing: 3px;
+    font-size: 40px; }
+  .mainpag .capsula .capsula-container h4 {
+    font-family: "Barlow", sans-serif;
+    color: #4f290e;
+    font-size: 20px; }
+  .mainpag .capsula .capsula-container:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms; }
+  .mainpag .verproductos {
+    background-color: #4f290e; }
