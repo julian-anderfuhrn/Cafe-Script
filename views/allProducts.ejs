@@ -16,24 +16,16 @@
 
 <body class="products">
     <%- include('partials/header') %>
-        <div class=" productstitle d-flex justify-content-center">
+        <div class=" productstitle">
             <h1>
-                TODOS LOS PRODUCTOS
+                Todos los productos
             </h1>
+            <p>
+                ¡Conoce nuestras bebidas y alimentos de temporada!
+            </p>
+            
         </div>
-        <div class=" dropdown d-flex justify-content-end">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Ordenar por
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Precio mayor</a></li>
-                <li><a class="dropdown-item" href="#">Precio menor</a></li>
-                <li><a class="dropdown-item" href="#">Alfabeticamente</a></li>
-                <li><a class="dropdown-item" href="#">Descuento</a></li>
-            </ul>
-        </div>
-        <div class="row container-fluid d-flex justify-content-between mt-5 mb-5">
+        <div class=" menu-productos row container-fluid d-flex justify-content-between mt-5 mb-5">
             <div class="col-sm-2 ">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Capsulas</li>
@@ -42,17 +34,29 @@
                     <li class="list-group-item">Cafe en grano</li>
                     <li class="list-group-item">Descuento</li>
                 </ul>
-
             </div>
-            <div class="col-sm-9">
+            <div class=" catalogo col-sm-9">
+                <div class=" catalogo__button dropdown d-flex justify-content-start">
+                    <button class=" catalogo__button-boton btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Ordenar por
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Precio mayor</a></li>
+                        <li><a class="dropdown-item" href="#">Precio menor</a></li>
+                        <li><a class="dropdown-item" href="#">Alfabeticamente</a></li>
+                        <li><a class="dropdown-item" href="#">Descuento</a></li>
+                    </ul>
+                </div>
                 <div class="row">
                     <% for( let index = 0; index < 6; index++ ) { %>
-                        <div class="col-sm-4 product product-container">
+                        <div class=" capsula-productos col-sm-4 product product-container">
                             <a href="#" class="text-reset text-decoration-none ">
                                 <img src="/images/capsula-lungo.png" alt="" class="img-fluid">
                                 <p>Capsula Decaf</p>
                                 <button class="button__add btn btn-secondary btn-sm">Agregar al carrito <i
-                                        class="fa-solid fa-cart-shopping"></i></button>
+                                        class="fa-solid fa-cart-shopping"></i>
+                                </button>
                             </a>
                         </div>
                     <% } %>

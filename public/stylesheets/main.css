@@ -527,6 +527,37 @@ input[type="submit"]:hover {
 
 .products {
   background-color: #F5F5DC; }
+  .products .productstitle h1 {
+    font-family: "Barlow", sans-serif;
+    color: #B8860B;
+    margin: 70px 0 10px 0;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center; }
+  .products .productstitle p {
+    font-family: "Barlow", sans-serif;
+    color: #B8860B;
+    font-size: 20px;
+    text-align: center; }
+  .products .catalogo .catalogo__button .catalogo__button-boton {
+    background-color: #4f290e;
+    color: white; }
+  .products .catalogo .catalogo__button .catalogo__button-boton:hover {
+    color: #B8860B; }
+  .products .catalogo .row .capsula-productos .button__add {
+    background-color: #4f290e; }
+  .products .catalogo .row .capsula-productos p {
+    font-family: "Barlow", sans-serif;
+    color: #4f290e;
+    font-size: 20px; }
+  .products .menu-productos {
+    background-color: #F5F5DC; }
+    .products .menu-productos div {
+      background-color: #F5F5DC; }
+      .products .menu-productos div ul {
+        background-color: #F5F5DC; }
+        .products .menu-productos div ul li {
+          background-color: #F5F5DC; }
 
 footer {
   background-color: #4f290e;
@@ -579,4 +610,7 @@ footer {
     transform: scale(1.2);
     transition-duration: 500ms; }
   .mainpag .verproductos {
+    background-color: #4f290e; }
+  .mainpag .verproductos:hover {
+    color: #B8860B;
     background-color: #4f290e; }
