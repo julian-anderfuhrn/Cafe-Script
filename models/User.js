@@ -58,5 +58,5 @@ const User = {
     }
 }
 
-console.log(User.findByField("email", "asd@asd.com"));
+// console.log(User.findByField("email", "asd@asd.com"));
 module.exports = User;

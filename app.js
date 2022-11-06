@@ -7,7 +7,8 @@ const session = require("express-session")
 const mysql = require('mysql');
 const methodOverride = require('method-override')
 const cors = require('cors')
-
+const dotenv = require("dotenv");
+const mongoose=require("mongoose");
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -16,6 +17,7 @@ const adminRouter = require('./routes/admin')
 
 const app = express();
 
+dotenv.config();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -44,6 +46,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/product', productRouter);
 app.use('/admin', adminRouter);
+//connect MongoDb
+
+mongoose
+.connect(process.env.MONGO_URL)
+.then(()=>console.log("DB Connected 😎 ⚡"))
+.catch(err=>console.log(err));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
