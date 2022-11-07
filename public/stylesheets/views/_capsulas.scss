@@ -1,0 +1,54 @@
+.products{
+     background-color: $background;
+     .productstitle{
+          h1{
+               font-family: $font-main;
+               color: $golden;
+               margin: 70px 0 10px 0;
+               letter-spacing: 3px;
+               font-size: 30px;
+               text-align: center;
+              
+          }
+          p{
+               font-family: $font-main;
+               color: $golden;
+               font-size: 20px;
+               text-align: center;  
+          }
+
+     }
+     .catalogo{
+          .catalogo__button{
+              .catalogo__button-boton{
+               background-color: $marron;
+               color: white;
+              }
+              .catalogo__button-boton:hover{
+               color: $golden;
+              }
+
+          }
+          .row{
+               .capsula-productos{
+                    .button__add{
+                         background-color: $marron;
+                    }
+                    p{
+                         font-family: $font-main;
+                         color: $marron;
+                         font-size: 20px;
+                    }
+               }
+          }
+     }
+     .menu-productos{
+          div{
+               ul{
+                    li{
+                         background-color: $background;   
+                    }
+               }
+          }
+     }
+}

@@ -5,19 +5,24 @@
   color: #f3e8e8;
   text-transform: uppercase;
   font-size: 0.9rem; }
-  .navbar .navbar__nav a {
-    letter-spacing: 2.5px;
-    font-family: "Barlow", sans-serif; }
-  .navbar .navbar__nav .logoscript {
-    font-family: "Rye", cursive; }
-  .navbar .navbar__nav .navbar__nav-s ul li .menu_options {
-    color: #f3e8e8; }
-    .navbar .navbar__nav .navbar__nav-s ul li .menu_options:hover {
-      text-decoration: underline;
-      color: #F0E68C; }
-  .navbar .navbar__nav .navbar__nav-s .cuenta a {
-    color: #f3e8e8;
-    font-family: "Rye", cursive; }
+  .navbar .navbar__nav {
+    display: flex;
+    align-items: center; }
+    .navbar .navbar__nav img {
+      margin: 0 10px 10px 0; }
+    .navbar .navbar__nav a {
+      letter-spacing: 2.5px;
+      font-family: "Barlow", sans-serif; }
+    .navbar .navbar__nav .logoscript {
+      font-family: "Rye", cursive; }
+    .navbar .navbar__nav .navbar__nav-s ul li .menu_options {
+      color: #f3e8e8; }
+      .navbar .navbar__nav .navbar__nav-s ul li .menu_options:hover {
+        text-decoration: underline;
+        color: #F0E68C; }
+    .navbar .navbar__nav .navbar__nav-s .cuenta a {
+      color: #f3e8e8;
+      font-family: "Rye", cursive; }
 
 .cafe-icon {
   width: 2rem; }
@@ -37,7 +42,7 @@
 .container_login {
   position: relative;
   width: 400px;
-  height: 440px;
+  height: 540px;
   background-color: #2e2a24;
   border-radius: 8px;
   overflow: hidden; }
@@ -64,6 +69,20 @@
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s; }
+
+.boton_login {
+  background-color: #4f290e;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 250px;
+  font-family: "Barlow", sans-serif;
+  color: #F5F5DC;
+  margin-top: 10px; }
+
+.boton_login:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms; }
 
 @keyframes animate {
   0% {
@@ -364,13 +383,14 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: black; }
+  background-color: black;
+  background-image: url("/images/background-pass.png"); }
 
 .container_recuperar {
   position: relative;
   width: 400px;
   height: 795px;
-  background-color: #2e2a24;
+  background-color: #F5F5DC;
   border-radius: 8px;
   overflow: hidden; }
 
@@ -410,14 +430,25 @@ input[type="submit"]:hover {
   position: absolute;
   inset: 2px;
   border-radius: 8px;
-  background: #4f2c0b;
+  background: #F5F5DC;
   z-index: 10;
   padding: 50px 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column; }
 
 .container_form h1 {
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  font-family: "Rye", cursive;
+  color: #B8860B;
+  font-size: 30px; }
+
+.container_form h2 {
+  font-family: "Barlow", sans-serif;
+  color: #4f290e;
+  font-size: 20px;
+  margin-bottom: -10px; }
 
 .container_form--div {
   position: relative;
@@ -427,22 +458,17 @@ input[type="submit"]:hover {
 .container_form--div input {
   position: relative;
   width: 100%;
-  padding: 20px 10px  10px;
-  background: transparent;
+  padding: 10px;
+  background: #4f290e;
   border: none;
+  border-radius: 10px;
   outline: none;
   font-size: 1em;
   letter-spacing: 0.05em;
   z-index: 10; }
 
-.container_form--div span {
-  position: absolute;
-  left: 0;
-  padding: 20px 0px 10px;
-  font-size: 1em;
-  pointer-events: none;
-  letter-spacing: 0.05em;
-  transition: 0.5s; }
+.container_form--div label {
+  color: #B8860B; }
 
 .container_form--div input:valid ~ span,
 .container_form--div input:focus ~ span {
@@ -469,7 +495,10 @@ input[type="submit"]:hover {
 
 .container_form--link {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 10px; }
+  .container_form--link .olvidepass {
+    margin-right: 50px; }
 
 .container_form--link a {
   margin: 10px 0;
@@ -525,6 +554,34 @@ input[type="submit"]:hover {
     pointer-events: none;
     z-index: 9; } }
 
+.products {
+  background-color: #F5F5DC; }
+  .products .productstitle h1 {
+    font-family: "Barlow", sans-serif;
+    color: #B8860B;
+    margin: 70px 0 10px 0;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center; }
+  .products .productstitle p {
+    font-family: "Barlow", sans-serif;
+    color: #B8860B;
+    font-size: 20px;
+    text-align: center; }
+  .products .catalogo .catalogo__button .catalogo__button-boton {
+    background-color: #4f290e;
+    color: white; }
+  .products .catalogo .catalogo__button .catalogo__button-boton:hover {
+    color: #B8860B; }
+  .products .catalogo .row .capsula-productos .button__add {
+    background-color: #4f290e; }
+  .products .catalogo .row .capsula-productos p {
+    font-family: "Barlow", sans-serif;
+    color: #4f290e;
+    font-size: 20px; }
+  .products .menu-productos div ul li {
+    background-color: #F5F5DC; }
+
 footer {
   background-color: #4f290e;
   color: #f3e8e8; }
@@ -536,20 +593,47 @@ footer {
 * {
   font-family: 'Raleway', sans-serif; }
 
-.carousel-button {
-  background-color: #4f290e; }
-
-.multi-carousel {
-  margin-top: 50px; }
-
-.banner-bottom {
-  width: 100%;
-  margin-top: 4rem; }
-
-.capsula-container:hover {
-  transform: scale(1.2);
-  transition-duration: 500ms; }
-
-.product-container:hover {
-  background-color: #bababa;
-  transition-duration: 500ms; }
+.mainpag {
+  background-color: #F5F5DC; }
+  .mainpag .carousel-button {
+    background-color: #4f290e; }
+  .mainpag .multi-carousel {
+    margin-top: 50px; }
+    .mainpag .multi-carousel .carousel-inner h2 {
+      font-family: "Barlow", sans-serif;
+      color: #B8860B;
+      margin: 50px 0 50px 0;
+      letter-spacing: 3px;
+      font-size: 40px; }
+    .mainpag .multi-carousel .carousel-inner .product-container {
+      padding-bottom: 30px; }
+      .mainpag .multi-carousel .carousel-inner .product-container p {
+        font-family: "Barlow", sans-serif;
+        font-size: 20px;
+        color: #4f290e; }
+      .mainpag .multi-carousel .carousel-inner .product-container .button__add {
+        background-color: #4f290e; }
+    .mainpag .multi-carousel .carousel-inner .product-container:hover {
+      background-color: #b8870b38;
+      transition-duration: 500ms; }
+  .mainpag .banner-bottom {
+    width: 100%;
+    margin-top: 4rem; }
+  .mainpag .capsula h2 {
+    font-family: "Barlow", sans-serif;
+    color: #B8860B;
+    margin: 70px 0 50px 0;
+    letter-spacing: 3px;
+    font-size: 40px; }
+  .mainpag .capsula .capsula-container h4 {
+    font-family: "Barlow", sans-serif;
+    color: #4f290e;
+    font-size: 20px; }
+  .mainpag .capsula .capsula-container:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms; }
+  .mainpag .verproductos {
+    background-color: #4f290e; }
+  .mainpag .verproductos:hover {
+    color: #B8860B;
+    background-color: #4f290e; }

@@ -4,15 +4,16 @@
     align-items: center;
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
+    background-image: url("/images/background-pass.png");
 }
 
 .container_recuperar { 
     position: relative;
     width: 400px;
     height: 795px;
-    background-color: #2e2a24;
-border-radius: 8px;
-overflow: hidden;
+    background-color: $background;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .container_recuperar::before{
@@ -49,45 +50,54 @@ overflow: hidden;
 .titulo{
 display: flex;
 }
+
+// LOGIN
 .container_form{
      position: absolute;
      inset: 2px;
      border-radius: 8px;
-     background:rgb(79, 44, 11);
+     background:$background;
      z-index: 10;
     padding: 50px 40px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .container_form h1 { 
     letter-spacing: 0.1em;
+    font-family: $fontsecond;
+    color: $golden;
+    font-size: 30px;
+}
+.container_form h2{
+    font-family: $font-main;
+    color: $marron;
+    font-size: 20px;
+    margin-bottom: -10px;
 }
 .container_form--div{
  position: relative;
  width: 300px;
- margin-top: 35px;   
+ margin-top: 35px;
 }
 
 .container_form--div input{
     position: relative;
     width: 100%;
-    padding: 20px 10px  10px;
-    background: transparent;
+    padding:10px;
+    background:$marron ;
+    
     border: none;
+    border-radius: 10px;
     outline: none;
     font-size: 1em;
     letter-spacing: 0.05em;
 z-index: 10;
 }
 
-.container_form--div span{
-    position: absolute;
-    left: 0 ;
-    padding: 20px 0px 10px;
-    font-size: 1em;
-    pointer-events: none;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
+.container_form--div label{
+    color: $golden;
 }
 
 .container_form--div input:valid ~ span,
@@ -118,6 +128,10 @@ z-index: 10;
 .container_form--link{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    .olvidepass{
+        margin-right: 50px;
+    }
 
 }
 

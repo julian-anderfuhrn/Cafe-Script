@@ -6,6 +6,11 @@
     font-size: 0.9rem;
     
     .navbar__nav {
+        display: flex;
+        align-items: center;
+        img{
+            margin: 0 10px 10px 0;
+        }
         a{
             letter-spacing: 2.5px;
             font-family: $font-main;

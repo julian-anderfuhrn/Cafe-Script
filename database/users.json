@@ -1,0 +1,83 @@
+[
+ {
+  "id": 1,
+  "name": "asdsad",
+  "apellido": "asdsa",
+  "email": "asd@asd.com",
+  "telefono": "123",
+  "password": "$2a$10$lQYCHGVOiCZ8iQ/LOzLDquWQ9JQJ5WjBGoLVbILg9Ce34w/RR7JlK",
+  "confirmPass": "$2a$10$kM4wvz605wAmkp4D/VurjuUPf6eRBvYc1kr51sJ0rAnZlcmkwfQ6C"
+ },
+ {
+  "id": 1,
+  "name": "asdsad",
+  "apellido": "asdsa",
+  "email": "asd@as123d.com",
+  "telefono": "123",
+  "password": "$2a$10$lQYCHGVOiCZ8iQ/LOzLDquWQ9JQJ5WjBGoLVbILg9Ce34w/RR7JlK",
+  "confirmPass": "$2a$10$kM4wvz605wAmkp4D/VurjuUPf6eRBvYc1kr51sJ0rAnZlcmkwfQ6C"
+ },
+ {
+  "id": 2,
+  "name": "123",
+  "apellido": "123",
+  "email": "asd@a123231sd.com",
+  "telefono": "123",
+  "password": "$2a$10$Sn60Zm0rdxAfhIkQasvdNey6HGHO4zD4SxxGlRhoJQyr3RhY0Wzt2",
+  "confirmPass": "$2a$10$KbAokzQ5upfOpldK6YR.fuwhCtMqOuXW3U0uu75iBFeCqfl27ERXS"
+ },
+ {
+  "id": 3,
+  "name": "zarpa",
+  "apellido": "doen",
+  "email": "zarpadoen@sad.com",
+  "telefono": "123",
+  "password": "$2a$10$v8oS5KnSH1e5O44Fd.ldeuyTWmn3u4hNIk3RSnDf/Y/B9pYSknPnG",
+  "confirmPass": "$2a$10$5J4r6DCskt8quXxQ/CGF8u7S.Njyt2DSkJKY/DA2u1G2mORK3pz8G"
+ },
+ {
+  "id": 4,
+  "name": "sharawy",
+  "apellido": "akemnrra",
+  "email": "zarpa@doen.com",
+  "telefono": "123123123",
+  "password": "$2a$10$aiu8K1Fz/3uQFf.XOXxlJ.B.5pnVdGjRcK5NdSxy4I9GNhGCEd7Wq",
+  "confirmPass": "$2a$10$xZS.qODrMnBfpNp6qiA8RuUuK.S5enE87pmdg2IF0PBW7WL9QQz2e"
+ },
+ {
+  "id": 5,
+  "name": "",
+  "apellido": "",
+  "email": "",
+  "telefono": "",
+  "password": "$2a$10$IxJ4cwSzBf0Ruzy3sYnU.enbI7plLcWBY72Qon9qO2SqHBkwRP/kS",
+  "confirmPass": "$2a$10$ur99FnBCKOMRKqkGtvUBueDZ6gG3zxwzDJ3/s.CSyJPHu3rbQ9vZG"
+ },
+ {
+  "id": 6,
+  "name": "sadasads",
+  "apellido": "sdasd",
+  "email": "asdas@asd.com",
+  "telefono": "123123123",
+  "password": "$2a$10$7wjy0oajj.kbaKsXwPksqeHvGxe3lCH1ZEx4uZjXUWU0yAMSGtt.2",
+  "confirmPass": "$2a$10$iwC/RWIAwOc.d.c2lHIQ2./ld2B/UzdpoQL1.1DYu0S8X472x/aCe"
+ },
+ {
+  "id": 7,
+  "name": "admin",
+  "apellido": "user",
+  "email": "admin@user.com",
+  "telefono": "123123123",
+  "password": "$2a$10$OgzvoqMV5jcQkYKobRlUkuMx9X73LfsEnCql81WdXuwrUg35LM8K6",
+  "confirmPass": "$2a$10$tJoxezVcTyPYFybznJlT.u/Gy8F77kMxalxAoeQQcyMwFnL22lhuy"
+ },
+ {
+  "id": 8,
+  "name": "ronnie2",
+  "apellido": "coleman2",
+  "email": "xX_ronnieXx@coleman2.com",
+  "telefono": 12312323,
+  "password": "$2a$10$Jma30qUTV/GXrkWBOHeA9uGliDJNoEXj39zOKHp7NpgLpg72qCoqq",
+  "confirmPass": "$2a$10$6PgBnIRzT3TrX75sJj8CTO/OH2C7uwsMx1pCipAhM7i9.k0B8FWEa"
+ }
+]

@@ -1,24 +1,69 @@
 *{
   font-family: 'Raleway', sans-serif;
 }
-
-.carousel-button {
+.mainpag{
+  background-color: $background;
+  .carousel-button {
+    background-color: $marron;
+  }
+  
+  .multi-carousel{
+    margin-top: 50px;
+    .carousel-inner{
+      h2{
+        font-family: $font-main;
+        color: $golden;
+        margin: 50px 0 50px 0;
+        letter-spacing: 3px;
+        font-size: 40px;
+      }
+      .product-container{
+        padding-bottom: 30px;
+        p{
+          font-family: $font-main;
+          font-size: 20px;
+          color: $marron;
+        }
+      .button__add{
+        background-color: #4f290e;
+        }
+      }
+      .product-container:hover {
+        background-color: #b8870b38 ;
+        transition-duration: 500ms;
+      }
+    }
+  }
+  
+  .banner-bottom {
+    width: 100%;
+    margin-top: 4rem;
+  }
+.capsula{
+  h2{
+    font-family: $font-main;
+    color: $golden;
+    margin: 70px 0 50px 0;
+    letter-spacing: 3px;
+    font-size: 40px;
+  }
+  .capsula-container{
+    h4{
+      font-family: $font-main;
+      color: $marron;
+      font-size: 20px;
+    }
+  }
+  .capsula-container:hover {
+    transform: scale(1.2);
+    transition-duration: 500ms;
+  }
+}
+.verproductos{
   background-color: $marron;
 }
-
-.multi-carousel{
-  margin-top: 50px;
+.verproductos:hover{
+ color: $golden;
+ background-color: $marron;
 }
-
-.banner-bottom {
-  width: 100%;
-  margin-top: 4rem;
-}
-.capsula-container:hover {
-  transform: scale(1.2);
-  transition-duration: 500ms;
-}
-.product-container:hover {
-  background-color: rgb(186, 186, 186) ;
-  transition-duration: 500ms;
 }

@@ -10,7 +10,7 @@
 .container_login { 
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 540px;
     background-color: #2e2a24;
 border-radius: 8px;
 overflow: hidden;
@@ -38,6 +38,21 @@ overflow: hidden;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
+}
+.boton_login{
+    background-color:$marron ;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 250px;
+    font-family: $font-main;
+    color: $background;
+    margin-top: 10px;
+    
+}
+.boton_login:hover{
+    transform: scale(1.2);
+    transition-duration: 500ms;
 }
 @keyframes animate{
     0%{
