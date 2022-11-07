@@ -26,25 +26,25 @@
 
                 <h1 class="text-center">CafeScript</h1>
 
-                <h2 class="text-light text-center">Ingresar</h2>
+                <h2 class=" text-center">Ingresar</h2>
              
                         <div class="container_form--div" id="container_nombre">
-                            <input type="text" id="nombre" name="email" class="text-light"
+                            <label for="Email">Email</label>
+                            <input type="text" id="nombre"  name="email" class="text-light"
                             value="<%= locals.oldData ? oldData.email :null %>">
-                            <span>Email</span>
-                            <i></i>
+                            
                         </div>
                         <div class="container_form--div" id="container_pass">
-                            <input type="password" id="password" name="password" class="text-light"
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" id="password"  name="password" class="text-light"
                             value="<%= locals.oldData ? oldData.password :null %>">
-                            <span>Contraseña</span>
-                            <i></i>
+
                         </div>
                         <div class="container_form--link">
-                            <a href="/users/olvidar">Olvide mi Contraseña</a>
+                            <a class="olvidepass" href="/users/olvidar">Olvide mi Contraseña</a>
                             <a href="/users/register">Registarse</a>
                         </div>
-                        <button type="submit" value="Login">Login</button>
+                        <button class="boton_login" type="submit" value="Login">Login</button>
             </div>
         </form>
 

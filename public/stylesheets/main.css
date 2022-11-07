@@ -42,7 +42,7 @@
 .container_login {
   position: relative;
   width: 400px;
-  height: 440px;
+  height: 540px;
   background-color: #2e2a24;
   border-radius: 8px;
   overflow: hidden; }
@@ -69,6 +69,20 @@
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s; }
+
+.boton_login {
+  background-color: #4f290e;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 250px;
+  font-family: "Barlow", sans-serif;
+  color: #F5F5DC;
+  margin-top: 10px; }
+
+.boton_login:hover {
+  transform: scale(1.2);
+  transition-duration: 500ms; }
 
 @keyframes animate {
   0% {
@@ -369,13 +383,14 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: black; }
+  background-color: black;
+  background-image: url("/images/background-pass.png"); }
 
 .container_recuperar {
   position: relative;
   width: 400px;
   height: 795px;
-  background-color: #2e2a24;
+  background-color: #F5F5DC;
   border-radius: 8px;
   overflow: hidden; }
 
@@ -415,14 +430,25 @@ input[type="submit"]:hover {
   position: absolute;
   inset: 2px;
   border-radius: 8px;
-  background: #4f2c0b;
+  background: #F5F5DC;
   z-index: 10;
   padding: 50px 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column; }
 
 .container_form h1 {
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  font-family: "Rye", cursive;
+  color: #B8860B;
+  font-size: 30px; }
+
+.container_form h2 {
+  font-family: "Barlow", sans-serif;
+  color: #4f290e;
+  font-size: 20px;
+  margin-bottom: -10px; }
 
 .container_form--div {
   position: relative;
@@ -432,22 +458,17 @@ input[type="submit"]:hover {
 .container_form--div input {
   position: relative;
   width: 100%;
-  padding: 20px 10px  10px;
-  background: transparent;
+  padding: 10px;
+  background: #4f290e;
   border: none;
+  border-radius: 10px;
   outline: none;
   font-size: 1em;
   letter-spacing: 0.05em;
   z-index: 10; }
 
-.container_form--div span {
-  position: absolute;
-  left: 0;
-  padding: 20px 0px 10px;
-  font-size: 1em;
-  pointer-events: none;
-  letter-spacing: 0.05em;
-  transition: 0.5s; }
+.container_form--div label {
+  color: #B8860B; }
 
 .container_form--div input:valid ~ span,
 .container_form--div input:focus ~ span {
@@ -474,7 +495,10 @@ input[type="submit"]:hover {
 
 .container_form--link {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 10px; }
+  .container_form--link .olvidepass {
+    margin-right: 50px; }
 
 .container_form--link a {
   margin: 10px 0;
@@ -555,14 +579,8 @@ input[type="submit"]:hover {
     font-family: "Barlow", sans-serif;
     color: #4f290e;
     font-size: 20px; }
-  .products .menu-productos {
+  .products .menu-productos div ul li {
     background-color: #F5F5DC; }
-    .products .menu-productos div {
-      background-color: #F5F5DC; }
-      .products .menu-productos div ul {
-        background-color: #F5F5DC; }
-        .products .menu-productos div ul li {
-          background-color: #F5F5DC; }
 
 footer {
   background-color: #4f290e;
