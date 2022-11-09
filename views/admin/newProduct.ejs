@@ -23,31 +23,31 @@
         <div class="container_form text-light ">
 
             <h1 class="text-center">CafeScript</h1>
-            <form action="/product/newProduct" method="POST" class="new_product" id="form_product" enctype="multipart/form-data">
-                <h2 class="text-light text-center">Creá un nuevo producto</h2>
+            <form action="/admin/create" method="POST" class="new_product" id="form_product" enctype="multipart/form-data">
+                <h2 class="text-center">Creá un nuevo producto</h2>
                 <div class="container_form--div">
-                    <input type="text" class="text-light" id="nombre">
-                    <span>Nombre del producto</span>
+                    <label for="name">Nombre del producto</label>
+                    <input name="name" type="text" class="text-light" id="nombre">
                     <i></i>
                 </div>
                 <div class="container_form--div">
-                    <input type="text" class="text-light">
-                    <span>Descripcion del producto</span>
+                    <label for="description">Descripcion del producto</label>
+                    <input name="description" type="text" class="text-light">
                     <i></i>
                 </div>
                 <div class="container_form--div">
-                    <input type="number" class="text-light">
-                    <span>Precio</span>
+                    <label for="price">Precio</label>
+                    <input name="price" type="number" class="text-light">
                     <i></i>
                 </div>
                 <div class="container_form--div">
-                    <input type="number" class="text-light">
-                    <span>Descuento</span>
+                    <label for="discount">Descuento</label>
+                    <input name="discount" type="number" class="text-light">
                     <i></i>
                 </div>
                 <div class="container_form--div">
-                    <input type="file"class="text-light">
-                    <span>imagen</span>
+                    <label for="image">imagen</label>
+                    <input name="image" type="file"class="text-light">
                     <i></i>
                 </div>
                 <div class="container_form--link">

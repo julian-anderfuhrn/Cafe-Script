@@ -15,17 +15,19 @@ const storage = multer.diskStorage({
     },
     filename: function (req, file, cb) {
       const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-      cb(null, file.fieldname + Date.now()+path.extname(file.originalname))
+      cb(null, 'product-' + Date.now()+path.extname(file.originalname))
     }
   })
   
   const upload = multer({ storage})
 
 router.get('/options', adminController.index);
-router.get('/create', function (req, res, next) {
-    res.render('newProduct', { title: 'Express' });
-  });
-
+router.get('/create', adminController.create);
+router.post('/create',upload.single('image') ,adminController.save);
+router.get('/detail/:id', adminController.show);
+router.get('/edit/:id', adminController.edit)
+router.put('/edit/:id',upload.single('imagen') ,adminController.update);
+router.get('/delete/:id', adminController.destroy);
 
 
 module.exports = router;

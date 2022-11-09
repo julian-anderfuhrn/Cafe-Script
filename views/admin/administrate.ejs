@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <%- include('partials/header') %>
+    <%- include('../partials/header') %>
     <div class="mt-5 btn-info p-4">
         <a href="/admin/create">
             <button class="btn btn-primary">Agregar nuevo producto</button>
@@ -27,12 +27,13 @@
     <ul class="list-group p-4">
         <% products.forEach(product => { %>
             <li class="list-group-item"><%=product.nombre %>
-                  <a href="/admin/:" class="text-info ms-5">visualizar</a>
-                  <a href="/admin/edit" class="text-warning ms-5">editar</a> 
-                  <a href="/admin/delete" class="text-danger ms-5">eliminar</a></li>
+                  <a href="/admin/detail/<%=product.id %>" class="text-info ms-5">visualizar</a>
+                  <a href="/admin/edit/<%=product.id %>" class="text-warning ms-5">editar</a> 
+                  <a href="/admin/delete/<%=product.id %>" class="text-danger ms-5">eliminar</a>
+            </li>
         <% }) %>
       </ul> 
-    <%- include('partials/footer') %>
+    <%- include('../partials/footer') %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"crossorigin="anonymous"></script>
 </body>
 

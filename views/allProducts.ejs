@@ -49,14 +49,12 @@
                     </ul>
                 </div>
                 <div class="row">
-                    <% for( let index = 0; index < 6; index++ ) { %>
-                        <div class=" capsula-productos col-sm-4 product product-container">
-                            <a href="#" class="text-reset text-decoration-none ">
-                                <img src="/images/capsula-lungo.png" alt="" class="img-fluid">
-                                <p>Capsula Decaf</p>
-                                <button class="button__add btn btn-secondary btn-sm">Agregar al carrito <i
-                                        class="fa-solid fa-cart-shopping"></i>
-                                </button>
+                    <% for( let index = 0; index < products.length; index++ ) { %>
+                        <div class="col-sm-4 product-container">
+                            <a href="#" class="text-reset text-decoration-none text-center">
+                                <img src="/images/products/<%=products[index].imagen%>" alt="" class="img-fluid">
+                                <p><%=products[index].nombre%></p>
+                                <button class="button__add btn btn-secondary btn-sm">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
                             </a>
                         </div>
                     <% } %>

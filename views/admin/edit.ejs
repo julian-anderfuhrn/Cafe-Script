@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <title>Document</title>
+</head>
+
+<body class="body__login">
+    <div class="container_register" id="contenedor_register">
+        <div class="container_form text-light ">
+
+            <h1 class="text-center">CafeScript</h1>
+            <form action="/admin/edit/<%=productEdit.id%>?_method=PUT" method="POST" class="new_product" id="form_product" enctype="multipart/form-data">
+                <h2 class="text-center">Editar producto</h2>
+                <div class="container_form--div">
+                    <label for="nombre">Nombre del producto</label>
+                    <input name="nombre" type="text" class="text-light" id="nombre" value="<%=productEdit.nombre %>">
+                    <i></i>
+                </div>
+                <div class="container_form--div">
+                    <label for="descripcion">Descripcion del producto</label>
+                    <input name="descripcion" type="text" class="text-light" value="<%=productEdit.descripcion %>">
+                    <i></i>
+                </div>
+                <div class="container_form--div">
+                    <label for="precio">Precio</label>
+                    <input name="precio" type="number" class="text-light" value="<%=productEdit.precio %>">
+                    <i></i>
+                </div>
+                <div class="container_form--div">
+                    <label for="descuento">Descuento</label>
+                    <input name="descuento" type="number" class="text-light" value="<%=productEdit.descuento %>">
+                    <i></i>
+                </div>
+                <div class="container_form--div">
+                    <label for="imagen">imagen</label>
+                    <input name="imagen" type="file"class="text-light">
+                    <input type="hidden" name="oldImagen" value="<%=productEdit.imagen%>">
+                    <i></i>
+                </div>
+                <div class="container_form--link">
+                    <p href="/users/login">Agregar producto</p>
+                </div>
+                <input type="submit" value="Edit">
+            </form>
+        </div>
+    </div>
+    <div id="validador">
+
+    </div>
+</body>
+
+</html>
