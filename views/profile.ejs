@@ -33,10 +33,68 @@
 
                 <h2>
                     <%= users.email %>
+                        <hr>
+
                 </h2>
 
-                <a href="/users/logout" class="btn btn-danger">Logout</a>
 
+                <!-- <h1 class="text-center">CafeScript</h1>
+                <form action="/users/profile?_method=PUT" method="POST" id="form2">
+                    <h2 class=" text-center">Actualiza tus datos</h2>
+
+                    <div class="container_form--div">
+
+                        <label>Nombre</label>
+                        <input type="text" class="text-light" id="nombre" name="name"
+                            value="<%= locals.oldData ? oldData.name :null %>">
+
+                        <i></i>
+                    </div>
+                    <div class="container_form--div">
+
+                        <label>Apellido</label>
+                        <input type="text" id="apellido" class="text-light" name="apellido"
+                            value="<%= locals.oldData ? oldData.apellido :null %>">
+                        <i></i>
+                    </div>
+                    <div class="container_form--div">
+
+                        <label>Email</label>
+                        <input type="email" id="email" class="text-light" name="email"
+                            value="<%= locals.oldData ? oldData.email :null %>">
+
+                        <i></i>
+
+                    </div>
+
+                    <div class="container_form--div">
+                        <label>Telefono</label>
+                        <input type="tel" id="tel" class="text-light" name="telefono"
+                            value="<%= locals.oldData ? oldData.telefono :null %>">
+                        <i></i>
+                    </div>
+                    <div class="container_form--div">
+                        <label>Contraseña</label>
+                        <input type="password" id="pass" class="text-light" name="password"
+                            value="<%= locals.oldData ? oldData.password :null %> ">
+                        <i></i>
+                    </div>
+                    <div class="container_form--div">
+                        <label>Confirmar contraseña</label>
+                        <input type="password" id="confirmPass" class="text-light" name="confirmPass"
+                            value="<%= locals.oldData ? oldData.confirmPass :null %>">
+                        <i></i>
+                    </div>
+                    <div class="container_form--link">
+                        <a href="/users/olvidar">Olvide mi Contraseña</a>
+
+                    </div>
+                    <button type="submit" value="Register">Actualizar datos</button>
+                </form>
+ -->
+
+                <a href="/users/logout" class="btn btn-danger">logout</a>
+                <a href="/users/actualizar/<%=users.id%>" class=" m-3  btn btn-dark">Datos personales</a>
             </div>
         </div>
 

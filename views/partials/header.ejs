@@ -1,11 +1,11 @@
-
 <nav class="navbar navbar-expand-lg p-4">
   <div class=" navbar__nav container-fluid text-reset">
     <img src="images/LOGO.gif" alt="" height="25">
     <a class=" logoscript navbar-brand text-reset" href="/">
       CafeScript
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar__nav-s collapse navbar-collapse" id="navbarSupportedContent">
@@ -17,7 +17,8 @@
           <a class=" menu_options nav-link " href="/admin/options">Administrar</a>
         </li>
         <li class="nav-item dropdown">
-          <a class=" menu_options nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class=" menu_options nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Productos
           </a>
           <ul class="dropdown-menu text-lowercase " id="dropdown-menu">
@@ -33,10 +34,25 @@
         <button class="btn btn-outline-light" type="submit">Buscar</button>
       </form>
       <div class=" cuenta d-flex align-items-center p-2">
-        <a class="navbar-brand text-reset" href="/users/login">
-          <i class="fa-regular fa-user"></i>
-          Mi cuenta
-        </a>
+
+        <% if(locals.id){ %>
+          <a class="navbar-brand text-reset" href="/users/actualizar/<%=locals.id%>">
+            <i class="fa-regular fa-user"></i>
+            Mi cuenta
+          </a>
+          <% } else{ %>
+            <a class="navbar-brand text-reset" href="/users/login">
+              <i class="fa-regular fa-user"></i>
+              Mi cuenta
+            </a>
+            <% } %>
+
+
+
+
+
+
+
       </div>
     </div>
   </div>

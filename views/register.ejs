@@ -25,49 +25,48 @@
             <h1 class="text-center">CafeScript</h1>
             <form action="/users/register" method="POST" id="form2">
                 <h2 class="text-light text-center">Creá tu cuenta</h2>
-              
+
                 <div class="container_form--div">
-                  
+
                     <label>Nombre</label>
-                    <input type="text" class="text-light" id="nombre" name="name" value="<%= locals.oldData ? oldData.name :null %>">
-                
+                    <input type="text" class="text-light" id="nombre" name="name"
+                        value="<%= locals.oldData ? oldData.name :null %>">
+
                     <i></i>
                 </div>
                 <div class="container_form--div">
-                   
+
                     <label>Apellido</label>
-                    <input type="text" id="apellido" class="text-light" name="apellido" value="<%= locals.oldData ? oldData.apellido :null %>">
+                    <input type="text" id="apellido" class="text-light" name="apellido"
+                        value="<%= locals.oldData ? oldData.apellido :null %>">
                     <i></i>
                 </div>
                 <div class="container_form--div">
-                   
+
                     <label>Email</label>
-                    <input type="email" 
-                    id="email" 
-                    class="text-light" 
-                    name="email" 
-                    value="<%= locals.oldData ? oldData.email :null %>">
-                    
+                    <input type="email" id="email" class="text-light" name="email"
+                        value="<%= locals.oldData ? oldData.email :null %>">
+
                     <i></i>
-                   
+
                 </div>
-             
+
                 <div class="container_form--div">
                     <label>Telefono</label>
                     <input type="tel" id="tel" class="text-light" name="telefono"
-                    value="<%= locals.oldData ? oldData.telefono :null %>"> 
+                        value="<%= locals.oldData ? oldData.telefono :null %>">
                     <i></i>
                 </div>
                 <div class="container_form--div">
                     <label>Contraseña</label>
-                    <input type="password" id="pass" class="text-light" name="password" 
-                    value="<%= locals.oldData ? oldData.password :null %> ">
+                    <input type="password" id="pass" class="text-light" name="password"
+                        value="<%= locals.oldData ? oldData.password :null %> ">
                     <i></i>
                 </div>
                 <div class="container_form--div">
                     <label>Confirmar contraseña</label>
                     <input type="password" id="confirmPass" class="text-light" name="confirmPass"
-                    value="<%= locals.oldData ? oldData.confirmPass :null %>">
+                        value="<%= locals.oldData ? oldData.confirmPass :null %>">
                     <i></i>
                 </div>
                 <div class="container_form--link">
@@ -80,13 +79,15 @@
     </div>
     <div id="validador">
         <% if (locals.errors) { %>
-           
+
             <% locals.errors.forEach(err=>{ %>
-                <p class="alert alert-danger m-2"><%=err.msg%></p>
+                <p class="alert alert-danger m-2">
+                    <%=err.msg%>
+                </p>
                 <% })%>
 
-        <% } %>
-      
+                    <% } %>
+
     </div>
     <!-- <script src="/js/register.js">
 

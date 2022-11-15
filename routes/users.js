@@ -29,5 +29,10 @@ router.post("/register", validateRegisterForm, userController.processRegister);
 router.get("/olvidar", userController.olvidarPass);
 //Profile
 router.get("/profile", authMiddleware, userController.profile)
+router.get("/profile/:id", authMiddleware, userController.profileId)
 router.get("/logout", userController.logout)
+//Actualizar datos 
+router.get("/actualizar/:id", userController.profileId);
+router.put("/actualizar/:id", userController.updateData);
+
 module.exports = router;
