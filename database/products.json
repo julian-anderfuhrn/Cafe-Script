@@ -1,1 +1,68 @@
-[{"nombre":"capsula nostro","descripcion":"lorem ipsum","precio":"151","descuento":"0","oldImagen":"product-1667988958416.png","id":"1","imagen":"product-1667988958416.png"},{"id":"2","nombre":"capsula decaf","descripcion":"café de notas dulces y frutos secos","precio":"100","descuento":0,"imagen":"capsula-decaf.png"},{"id":"3","nombre":"capsula forte","descripcion":"café de notas dulces y frutos secos","precio":"100","descuento":0,"imagen":"capsula-forte.png"},{"id":"4","nombre":"capsula lungo","descripcion":"café de notas dulces y frutos secos","precio":"100","descuento":0,"imagen":"capsula-lungo.png"},{"id":"5","nombre":"capsula tradizionale","descripcion":"café de notas dulces y frutos secos","precio":"100","descuento":0,"imagen":"capsula-tradizionale.png"},{"id":"6","nombre":"capsula nero","descripcion":"café de notas dulces y frutos secos","precio":"100","descuento":0,"imagen":"capsula-nero.png"},{"nombre":"Cafetera bodum","descripcion":"lorem ipsum dolorem petonem","precio":"50","descuento":"20","oldImagen":"product-1667990099869.webp","id":"7","imagen":"product-1667990099869.webp"}]
+[
+  {
+    "nombre": "capsula nostro",
+    "descripcion": "lorem ipsum",
+    "precio": "151",
+    "descuento": "0",
+    "oldImagen": "product-1667988958416.png",
+    "id": "1",
+    "imagen": "product-1667988958416.png"
+  },
+  {
+    "id": "2",
+    "nombre": "capsula decaf",
+    "descripcion": "café de notas dulces y frutos secos",
+    "precio": "100",
+    "descuento": 0,
+    "imagen": "capsula-decaf.png"
+  },
+  {
+    "id": "3",
+    "nombre": "capsula forte",
+    "descripcion": "café de notas dulces y frutos secos",
+    "precio": "100",
+    "descuento": 0,
+    "imagen": "capsula-forte.png"
+  },
+  {
+    "id": "4",
+    "nombre": "capsula lungo",
+    "descripcion": "café de notas dulces y frutos secos",
+    "precio": "100",
+    "descuento": 0,
+    "imagen": "capsula-lungo.png"
+  },
+  {
+    "id": "5",
+    "nombre": "capsula tradizionale",
+    "descripcion": "café de notas dulces y frutos secos",
+    "precio": "100",
+    "descuento": 0,
+    "imagen": "capsula-tradizionale.png"
+  },
+  {
+    "id": "6",
+    "nombre": "capsula nero",
+    "descripcion": "café de notas dulces y frutos secos",
+    "precio": "100",
+    "descuento": 0,
+    "imagen": "capsula-nero.png"
+  },
+  {
+    "nombre": "Cafetera bodum",
+    "descripcion": "lorem ipsum dolorem petonem",
+    "precio": "50",
+    "descuento": "20",
+    "oldImagen": "product-1667990099869.webp",
+    "id": "7",
+    "imagen": "product-1667990099869.webp"
+  },
+  {
+    "id": 8,
+    "nombre": "Cafe brazil 1 kg",
+    "descripcion": "lorem ipsum, el aleman se la come",
+    "precio": "8000",
+    "descuento": "200",
+    "imagen": "product-1668179652704.webp"
+  }
+]

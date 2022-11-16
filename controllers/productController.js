@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const productsShema = require('../models/Products');
 
 module.exports = {
     index: (req,res) => {
