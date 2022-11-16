@@ -8,7 +8,7 @@ const mysql = require('mysql');
 const methodOverride = require('method-override')
 const cors = require('cors')
 const dotenv = require("dotenv");
-const mongoose=require("mongoose");
+const mongoose = require("mongoose");
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -49,10 +49,9 @@ app.use('/admin', adminRouter);
 //connect MongoDb
 
 mongoose
-.connect("mongodb+srv://root4:GpDUjvP8e-d35zV@cluster0.8tomfjh.mongodb.net/?retryWrites=true&w=majority")
-
-.then(()=>console.log("DB Connected 😎 ⚡"))
-.catch(err=>console.log(err));
+  .connect("mongodb+srv://root4:GpDUjvP8e-d35zV@cluster0.8tomfjh.mongodb.net/?retryWrites=true&w=majority")
+  .then(() => console.log("DB Connected 😎 ⚡"))
+  .catch(err => console.log(err));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
