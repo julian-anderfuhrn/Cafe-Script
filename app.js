@@ -49,7 +49,7 @@ app.use('/admin', adminRouter);
 //connect MongoDb
 
 mongoose
-  .connect("mongodb+srv://root4:GpDUjvP8e-d35zV@cluster0.8tomfjh.mongodb.net/?retryWrites=true&w=majority")
+  .connect(process.env.MONGO_URL)
   .then(() => console.log("DB Connected 😎 ⚡"))
   .catch(err => console.log(err));
 
